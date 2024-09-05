@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="충북 지역 전통시장"/>
+    <meta property="og:image" content="open_image.jpg"/>
+    <meta property="og:url" content="https://ovclid.github.io/market_js/"/>
+    <meta property="og:description" content="충북 11개 시군구의 전통시장"/>
+
+    <title>충북 전통시장 주소 검색</title>
+
+    <style>
+        .overlay {
+               width : '45px';
+               height : '25px';
+               background-color : yellow; 
+               border-radius: 5px;
+               font-size: 12px; 
+               color:red; 
+               font-weight: bold;
+               padding: 2px;
+               /* border: 1px solid blue; */
+               /* background-image: url("overlay_bg.png"); */
+           } 
+
+	    .currentpos_overlay {
+            width : '40px';
+               height : '18px';
+               background-color : rgb(253, 102, 223); 
+               border-radius: 5px;
+               font-size: 11px;     
+               color:rgb(248, 2, 2); 
+               font-weight: bold;
+               padding: 2px;
+           } 
+	    
+        .search_overlay {
+               width : '45px';
+               height : '25px';
+               background-color : rgb(246, 148, 250); 
+               border-radius: 5px;
+               font-size: 11px; 
+               color:rgb(8, 0, 0); 
+               font-weight: bold;
+               padding: 2px;
+        }
+
+        .click_text {
+               font-size: 12px;
+               text-align: center;
+               padding: 2px;
+           }
+       </style>
+
+</head>
+
+<body>
+    <div>
+        <input id="box" type="text" size="50" onkeypress="javascript:if(event.keyCode == 13) {searchAddress();}"  placeholder="주소 또는 시장명 입력창" /> 
+        <input type="button" value="검색" onclick="searchAddress();" style="background-color: aliceblue;" />
+        <button onClick="window.location.reload();">초기화</button>
+        <p></p>
+        <div id="list" style="width:100%;height:50px; overflow: auto; font-size:12px;background-color: rgb(229, 240, 240);">        
+            <div style="font-style: italic; color: cadetblue;"> ㅇ  위치 정보 안내<br>
+                &nbsp;&nbsp;  - 스마트폰 : 지도의 원하는 위치를 1초간 눌러주세요. <br>
+                &nbsp;&nbsp;  - PC : 마우스 오른쪽 버튼 클릭하세요. 
+            </div>
+        </div>
+        <p></p>
+        <div id="map" style="width:100%;height:650px;"></div>
+        
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56dd36038680e4d6f7b1cbc67b011a06&libraries=services"></script>
+        <script type="text/javascript" src="market_info_Main.js"></script>
+        <script type="text/javascript" src="market_info_Middle.js"></script>
+        <script type="text/javascript" src="market_info_East.js"></script>
+        <script type="text/javascript" src="market_info_West.js"></script>
+        <script type="text/javascript" src="market_info_North.js"></script>
+        <script type="text/javascript" src="market_info_South.js"></script>
+        <script type="text/javascript" src="market_parking_lot.js"></script>
+        <script type="text/javascript" src="market_onnuri.js"></script>
+	    
+        <script>
+            //var base_center = new kakao.maps.LatLng(36.858351739006984, 127.44549719302887)
+            let base_Lat =   36.9916485888649; //음성무극시장         // 청주(36.176580653239384;)  영동전통시장(36.17502542411789;) 
+            let base_Lng =  127.596105990174; //음성무극시장    //청주(127.77534847937774;) 영동전통시장(127.77580277515723;)
+
+	        function setPosition(position) {
+                base_Lat = position.coords.latitude;
+                base_Lng = position.coords.longitude;
+
+                console.log(position.coords.latitude)
+                console.log(position.coords.longitude)
+
+		        base_center = new kakao.maps.LatLng(base_Lat, base_Lng);
+		        map.setCenter(base_center)
+
+		        var currentPosMarker = new kakao.maps.Marker({
+                	map: map,
+                	position: base_center
+                });
+		
+		        currentPosMarker.setMap(map);
+
+		        // 커스텀 오버레이를 생성합니다
+                var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: base_center,
+                    content: '<div class = "currentpos_overlay">' + '현위치 인근'  + '</div>',                    
+                    yAnchor: 3.0
+                })
+            }
+
+	        // 뒤의 코드가 실행되고(지도가 그려지고) 나서 나중에 천천히 적용됨
+            //navigator.geolocation.getCurrentPosition(success = setPosition, error = undefined, options = undefined);
+
+            let base_center = new kakao.maps.LatLng(base_Lat, base_Lng);
+            var mapContainer = document.getElementById('map');
+            var mapOption = {
+                center: base_center,    // 지도의 중심좌표
+                level: 3                // 지도의 확대 레벨(숫자가 커질 수록 지도 축소)
+            };  
+        
+            // 지도 생성    
+            var map = new kakao.maps.Map(mapContainer, mapOption); 
+            var mapTypeControl = new kakao.maps.MapTypeControl();    
+            var polygonPath = Object.assign({}, polygonPath_Main, polygonPath_Middle, polygonPath_East, polygonPath_West, polygonPath_North, polygonPath_South);
+            var markers_list = [];
+	
+
+
+            
+		
+            // 인포윈도우 생성
+            var infowindow = new kakao.maps.InfoWindow({
+                    //zIndex: 1,
+                    content : 'market[i]',
+                    removable : true
+            });
+
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPLEFT);
+            var market = Object.keys(polygonPath);  
+            for (var i = 0; i < market.length ; i++) {
+                // 지도에 표시할 다각형을 생성
+                var polygon = new kakao.maps.Polygon({
+                    path: polygonPath[market[i]],   // 다각형 좌표 배열
+                    strokeWeight: 3,                // 선의 두께
+                    strokeColor: '#FF0000',         // 선의 색깔
+                    strokeOpacity: 0.7,             // 선의 불투명(1 ~ 0: 0에 가까울수록 투명)
+                    strokeStyle: 'line',            // 선의 스타일
+                    fillColor: '#A2FF99',           // 채우기 색깔
+                    fillOpacity: 0.4                // 채우기 불투명
+                });
+
+                // 지도에 다각형을 표시합니다
+                polygon.setMap(map);
+                make_marker(i);
+            }
+
+
+            function make_marker(i) {
+                var marker = new kakao.maps.Marker({
+                            position: polygonPath[market[i]][0],
+                            clickable: true
+                });    
+                marker.setMap(map);
+                               
+                //var content = '<div class="click_text"> <address> <a href = "https://map.kakao.com/link/to/'+ market[i] + ',' + loc_Parking_lot[market[i]][0] + ',' + loc_Parking_lot[market[i]][1] + '">' + market[i] + " 카카오 내비" + '</a> </address> </div>';
+                var content = market[i];
+                kakao.maps.event.addListener(marker, 'click', function() {
+                    
+                    console.log("mark event listener!!!");
+
+                    if(Object.keys(loc_Parking_lot).includes(market[i])){
+                        content = '<div class="click_text"> 카카오내비 :' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + market[i] + ',' + loc_Parking_lot[market[i]][0] + ',' + loc_Parking_lot[market[i]][1] + ">" + 
+                            market[i] + " 주차장" + '</a>' + '</address> </div>';
+
+
+                    }
+
+                    infowindow.setContent(content);
+                    infowindow.open(map, marker);
+                    } 
+                );
+
+                // 커스텀 오버레이를 생성합니다
+                var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: polygonPath[market[i]][0],
+                    content: '<div class = "overlay">' + market[i]  + '</div>',                    
+                    yAnchor: 3.0
+                })
+
+            }
+
+
+            // 배열에 추가된 마커들을 지도에 표시하거나 삭제하는 함수입니다
+            function setMarkers(map) {
+                for (var i = 0; i < markers_list.length; i++) {
+                    markers_list[i].setMap(map);
+                }            
+                
+            }
+
+
+
+        
+            // 행사 장소                    
+            gather_lat = 36.9930688178295;  // 영동 -> 36.17784158411801;
+            gather_lng = 127.59592982361; // 영동 -> 127.7744160743991;
+            gather_pos = new kakao.maps.LatLng(gather_lat, gather_lng);  // 집결 장소
+		    var gatherPosMarker = new kakao.maps.Marker({
+                	map: map,
+                	position: gather_pos
+            });
+		
+		    gatherPosMarker.setMap(map);
+
+		    // 커스텀 오버레이를 생성합니다
+            var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: gather_pos,
+                    //content: '<div class = "currentpos_overlay">' + '행사장(9.5, 15시)'  + '</div>',   
+                    
+                    content : '<div class="currentpos_overlay">' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + "행사장" + ',' + gather_lat + ',' + gather_lng + ">" + "행사장(9.10, 15시)" + '</a>' + '</address> </div>',
+
+
+                    yAnchor: 2.9
+            });
+
+
+        var onnuri_reg_market = Object.keys(onnuri_reg_list);
+	    for (var i = 0; i < onnuri_reg_market.length ; i++) { 
+		    var circle = new kakao.maps.Circle({
+	    		center : new kakao.maps.LatLng(onnuri_reg_list[onnuri_reg_market[i]][0], onnuri_reg_list[onnuri_reg_market[i]][1]),  // 원의 중심좌표 입니다 
+	    		radius: 3, // 미터 단위의 원의 반지름입니다 
+	    		strokeWeight: 1, // 선의 두께입니다 
+	    		strokeColor: '#FF00FF', // 선의 색깔입니다
+	    		strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+	    		strokeStyle: 'line', // 선의 스타일 입니다
+	    		//fillColor: '#CFE7FF', // 채우기 색깔입니다
+			    fillColor: '#FF00FF', // 채우기 색깔입니다
+	    		fillOpacity: 0.7  // 채우기 불투명도 입니다   
+		    }); 
+
+
+
+            kakao.maps.event.addListener(circle, 'click', function(mouseEvent) {  
+                var latlng = mouseEvent.latLng;
+                console.log("test")
+                console.log(latlng.toString());      
+                
+                //content = '<div class="click_text"> 카카오내비 :' + '<address> <a href = https://map.kakao.com/link/to/' 
+                //            + onnuri_reg_market[i] + ',' + onnuri_reg_list[onnuri_reg_market[i]][0] + ',' + onnuri_reg_list[onnuri_reg_market[i]][1] + ">" + 
+                //            onnuri_reg_market[i] + " 주차장" + '</a>' + '</address> </div>';
+
+                
+                min_value = 9;
+                min_index = -1;
+                for (var i = 0; i < onnuri_reg_market.length ; i++) { 
+                    console.log(mouseEvent.latLng["Ma"])
+                    console.log(onnuri_reg_list[onnuri_reg_market[i]][0])
+                    x = mouseEvent.latLng["Ma"] - onnuri_reg_list[onnuri_reg_market[i]][0];
+                    y = mouseEvent.latLng["La"] - onnuri_reg_list[onnuri_reg_market[i]][1];
+                    value = x*x + y*y;
+                    if (min_value > value){
+                        min_value = value;
+                        min_index = i;
+                    }
+                    console.log(x*x + y*y)
+                };
+                
+                console.log(min_value)
+                console.log(min_index)
+                console.log(onnuri_reg_market[min_index]);
+                console.log(onnuri_reg_list[onnuri_reg_market[min_index]]);
+
+                content = '<div class="click_text">' + onnuri_reg_market[min_index] + "(" + onnuri_reg_list[onnuri_reg_market[min_index]][2] + ")" + "</div>";
+
+
+                var infowindow = new kakao.maps.InfoWindow({
+                    map: map, // 인포윈도우가 표시될 지도
+                    position : mouseEvent.latLng, 
+                    content : content,
+                    removable : true
+                });
+
+            });
+
+            circle.setMap(map); 
+	    };
+
+
+
+            map.setCenter(base_center)
+            
+            var geocoder = new kakao.maps.services.Geocoder();
+
+            function searchDetailAddrFromCoords(coords, callback) {
+                geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
+
+            }
+
+            // 지도를 클릭하면 해당 위치에 마크 생성(내비게이션 연결)
+            kakao.maps.event.addListener(map, 'rightclick', function(mouseEvent) {        
+                var detailAddr = '';
+                searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
+                    //console.log("마우스 이벤트 처리 시도");
+                    if (status === kakao.maps.services.Status.OK) {
+                        detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
+                        detailAddr += '<div>지번주소 : ' + result[0].address.address_name + '</div>';
+                        //console.log(detailAddr);
+
+                        var latlng = mouseEvent.latLng; 
+                        var message = '위경도 : (' + latlng.getLat() + ', ' + latlng.getLng() + ')';
+                        message = detailAddr + message + '<br>';
+                        console.log(message);
+    
+                        var newItem = document.createElement("div");
+                        newItem.innerHTML = message;
+                        
+                        var list_ele = document.getElementById("list")
+                        list_ele.innerHTML = '';
+                        list_ele.appendChild(newItem);
+
+                        list_ele.scrollTop = list_ele.scrollHeight;
+                        
+                        setMarkers(null);
+                        var coords = new kakao.maps.LatLng(latlng.getLat(), latlng.getLng()); 
+                        var marker = new kakao.maps.Marker({
+                            map: map,
+                            position: coords
+                        });
+                        markers_list.push(marker);
+
+                         // 커스텀 오버레이 생성
+                        
+                        //var detail_content = '<div class = "search_overlay">' + result[0].address.address_name + '</div>';
+
+
+                        var detail_content = '<div class="search_overlay">' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + result[0].address.address_name.replaceAll(' ', '') + ',' + latlng.getLat() + ',' + latlng.getLng() + ">" + 
+                            result[0].address.address_name + '</a>' + '</address> </div>';
+
+                        var customOverlay = new kakao.maps.CustomOverlay({
+                            map: map,
+                            position:coords,
+                            content: detail_content,                    
+                            yAnchor: 3.0
+                        })
+                        markers_list.push(customOverlay);
+                        //map.setCenter(coords);
+
+
+
+                    }
+                    else{
+                        console.log("실패: ");
+                        
+                    }
+                });
+            });
+
+            // 표시된 시장 목록중 하나를 선택하면 해당 시장으로 좌표 이동
+            function goto_address () {
+                //console.log(this.innerText)
+                //console.log("market_name", this.innerText);
+                //var coords = polygonPath[this.innerText][0];
+                map.setCenter(polygonPath[this.innerText][0]);
+            }
+
+            function searchAddress() {
+                document.activeElement.blur();  // 주소 검색 input 에 대한 포커스 릴리스 -> 스마트폰 불편
+
+                var list_ele = document.getElementById("list");
+                list_ele.innerHTML = '';
+
+                var newItem = document.createElement("div");
+                newItem.innerHTML = document.getElementById("box").value;
+                
+                var address = document.getElementById("box").value;
+                if (address == '') {
+                    address = "진천읍 중앙동7길 20";
+                }
+                
+                
+                // 주소 검색 전 전통시장 이름과 유사성 체크 
+                // 유사(include)하면 유사한 시장명 표시, 동일하면 그것으로 중심자표 이동
+
+                var similar_market_found = false;
+                for (var i = 0 ; i < market.length; i++) {
+                    if (market[i].includes(address)) {
+                        var newItem = document.createElement("div");
+                        newItem.innerHTML = market[i];
+                        newItem.onclick = goto_address;
+                        
+
+                        list_ele.appendChild(newItem);
+                        similar_market_found = true;
+                    }
+
+                    if ( market[i] == address) {
+                        var coords = polygonPath[market[i]][0];
+                        map.setCenter(coords);
+
+                        //similar_market_found = false;
+                        return;
+                    }
+                }
+                
+                if (similar_market_found) {
+                    return
+                }
+                
+                // 주소로 좌표 검색
+                var geocoder = new kakao.maps.services.Geocoder();
+                geocoder.addressSearch(address, function(result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                        
+
+                        setMarkers(null);
+
+                        var marker = new kakao.maps.Marker({
+                            map: map,
+                            position: coords
+                        });
+                        markers_list.push(marker);
+
+                         // 커스텀 오버레이 생성
+                        var detail_content = '<div class="search_overlay">' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + address.replaceAll(' ', '') + ',' + result[0].y + ',' + result[0].x + ">" + 
+                            address + '</a>' + '</address> </div>';
+
+                        var customOverlay = new kakao.maps.CustomOverlay({
+                            map: map,
+                            position:coords,
+                            //content: '<div class = "search_overlay">' + address + '</div>',                    
+                            content: detail_content,                    
+                            yAnchor: 3.0
+                        })
+                        markers_list.push(customOverlay);
+                        map.setCenter(coords);
+                    } 
+                    else {
+                        var newItem = document.createElement("div");
+                        newItem.innerHTML = document.getElementById("box").value + " : 검색 결과 없습니다.";
+                        document.getElementById("list").appendChild(newItem);
+                    }
+                });    
+            }
+        </script>
+    </div>
+</body>
