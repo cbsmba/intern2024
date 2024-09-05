@@ -204,49 +204,7 @@
                 }            
                 
             }
-
-
-
-        
-            // 행사 장소                    
-            gather_lat = 36.9930688178295;  // 영동 -> 36.17784158411801;
-            gather_lng = 127.59592982361; // 영동 -> 127.7744160743991;
-            gather_pos = new kakao.maps.LatLng(gather_lat, gather_lng);  // 집결 장소
-		    var gatherPosMarker = new kakao.maps.Marker({
-                	map: map,
-                	position: gather_pos
-            });
-		
-		    gatherPosMarker.setMap(map);
-
-		    // 커스텀 오버레이를 생성합니다
-            var customOverlay = new kakao.maps.CustomOverlay({
-                    map: map,
-                    position: gather_pos,
-                    //content: '<div class = "currentpos_overlay">' + '행사장(9.5, 15시)'  + '</div>',   
-                    
-                    content : '<div class="currentpos_overlay">' + '<address> <a href = https://map.kakao.com/link/to/' 
-                            + "행사장" + ',' + gather_lat + ',' + gather_lng + ">" + "행사장(9.10, 15시)" + '</a>' + '</address> </div>',
-
-
-                    yAnchor: 2.9
-            });
-
-
-        var onnuri_reg_market = Object.keys(onnuri_reg_list);
-	    for (var i = 0; i < onnuri_reg_market.length ; i++) { 
-		    var circle = new kakao.maps.Circle({
-	    		center : new kakao.maps.LatLng(onnuri_reg_list[onnuri_reg_market[i]][0], onnuri_reg_list[onnuri_reg_market[i]][1]),  // 원의 중심좌표 입니다 
-	    		radius: 3, // 미터 단위의 원의 반지름입니다 
-	    		strokeWeight: 1, // 선의 두께입니다 
-	    		strokeColor: '#FF00FF', // 선의 색깔입니다
-	    		strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
-	    		strokeStyle: 'line', // 선의 스타일 입니다
-	    		//fillColor: '#CFE7FF', // 채우기 색깔입니다
-			    fillColor: '#FF00FF', // 채우기 색깔입니다
-	    		fillOpacity: 0.7  // 채우기 불투명도 입니다   
-		    }); 
-
+       
 
 
             kakao.maps.event.addListener(circle, 'click', function(mouseEvent) {  
