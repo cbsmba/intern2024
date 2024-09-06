@@ -275,8 +275,8 @@
                 content_base = onnuri_reg_market[min_index] + "(" + onnuri_reg_list[onnuri_reg_market[min_index]][2] + ")";
 
 
-		content = '<div class="click_text"> content_base :' + '<address> <a href = https://map.kakao.com/link/to/' 
-                            + '가맹점' + ',' + mouseEvent.latLng["Ma"] + ',' + mouseEvent.latLng["La"] + ">" + 
+		content = '<div class="click_text">' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + onnuri_reg_market[min_index] + ',' + mouseEvent.latLng["Ma"] + ',' + mouseEvent.latLng["La"] + ">" + 
                             content_base + '</a>' + '</address> </div>';
 		    
                 var infowindow = new kakao.maps.InfoWindow({
