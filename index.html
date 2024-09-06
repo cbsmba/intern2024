@@ -251,11 +251,7 @@
                 console.log("test")
                 console.log(latlng.toString());      
                 
-                //content = '<div class="click_text"> 카카오내비 :' + '<address> <a href = https://map.kakao.com/link/to/' 
-                //            + onnuri_reg_market[i] + ',' + onnuri_reg_list[onnuri_reg_market[i]][0] + ',' + onnuri_reg_list[onnuri_reg_market[i]][1] + ">" + 
-                //            onnuri_reg_market[i] + " 주차장" + '</a>' + '</address> </div>';
-
-                
+               
                 min_value = 9;
                 min_index = -1;
                 for (var i = 0; i < onnuri_reg_market.length ; i++) { 
@@ -276,9 +272,13 @@
                 console.log(onnuri_reg_market[min_index]);
                 console.log(onnuri_reg_list[onnuri_reg_market[min_index]]);
 
-                content = '<div class="click_text">' + onnuri_reg_market[min_index] + "(" + onnuri_reg_list[onnuri_reg_market[min_index]][2] + ")" + "</div>";
+                content_base = onnuri_reg_market[min_index] + "(" + onnuri_reg_list[onnuri_reg_market[min_index]][2] + ")";
 
 
+		content = '<div class="click_text"> content_base :' + '<address> <a href = https://map.kakao.com/link/to/' 
+                            + '가맹점' + ',' + mouseEvent.latLng["Ma"] + ',' + mouseEvent.latLng["La"] + ">" + 
+                            content_base + '</a>' + '</address> </div>';
+		    
                 var infowindow = new kakao.maps.InfoWindow({
                     map: map, // 인포윈도우가 표시될 지도
                     position : mouseEvent.latLng, 
