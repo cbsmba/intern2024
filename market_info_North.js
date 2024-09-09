@@ -1,6 +1,17 @@
 // 충주, 단양, 제천
 
 var polygonPath_North = {
+
+      "중앙어울림시장" : [ 
+new kakao.maps.LatLng(36.9722602598608, 127.9334994253028 ), 
+new kakao.maps.LatLng(36.97216266327119, 127.9333301391189 ), 
+new kakao.maps.LatLng(36.97151534748426, 127.9333693348128 ), 
+new kakao.maps.LatLng(36.97147621651212, 127.9337114230662 ), 
+new kakao.maps.LatLng(36.97151883916775, 127.9337148261494 ), 
+new kakao.maps.LatLng(36.97151879020829, 127.9338687208735 ), 
+new kakao.maps.LatLng(36.97220266619235, 127.9338268320682 ), 
+],
+     
      "제천약초시장 다각형" : [ 
 new kakao.maps.LatLng(37.1267167067214, 128.2175418692972 ), 
 new kakao.maps.LatLng(37.12636598537448, 128.218522892583 ), 
