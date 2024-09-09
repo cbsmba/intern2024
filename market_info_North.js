@@ -2,15 +2,16 @@
 
 var polygonPath_North = {
 
-      "중앙어울림시장" : [ 
-new kakao.maps.LatLng(36.9722602598608, 127.9334994253028 ), 
-new kakao.maps.LatLng(36.97216266327119, 127.9333301391189 ), 
-new kakao.maps.LatLng(36.97151534748426, 127.9333693348128 ), 
-new kakao.maps.LatLng(36.97147621651212, 127.9337114230662 ), 
-new kakao.maps.LatLng(36.97151883916775, 127.9337148261494 ), 
-new kakao.maps.LatLng(36.97151879020829, 127.9338687208735 ), 
-new kakao.maps.LatLng(36.97220266619235, 127.9338268320682 ), 
+ "중앙어울림시장" : [ 
+new kakao.maps.LatLng(36.97216807943522, 127.9338843326166 ), 
+new kakao.maps.LatLng(36.97224783067048, 127.9334538115159 ), 
+new kakao.maps.LatLng(36.97218028591991, 127.9333534010587 ), 
+new kakao.maps.LatLng(36.97150591888531, 127.9334104694875 ), 
+new kakao.maps.LatLng(36.97147830677108, 127.933707394389 ), 
+new kakao.maps.LatLng(36.97151339845433, 127.9337151882697 ), 
+new kakao.maps.LatLng(36.97152173934147, 127.9339008173175 ), 
 ],
+
      
      "제천약초시장" : [ 
 new kakao.maps.LatLng(37.1267167067214, 128.2175418692972 ), 
