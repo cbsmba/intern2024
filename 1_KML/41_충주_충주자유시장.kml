@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>충주자유시장.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>충주자유시장</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						127.9337677721598,36.97380152470573,0 127.9316540260057,36.97523014088708,0 127.9308341869326,36.97556724010427,0 127.9302314409574,36.97568749069962,0 127.9278692853021,36.97595199182805,0 127.9276871103594,36.97596800655211,0 127.9276984237699,36.97584343975007,0 127.9287609401479,36.97445977527021,0 127.9292749226259,36.9732808885943,0 127.9289613554875,36.9733168317135,0 127.929041544394,36.97317047314057,0 127.9290469405962,36.97306793067312,0 127.9291450921864,36.97276340557785,0 127.9296052946285,36.97160120050793,0 127.9297093637272,36.97162476246469,0 127.9299660855905,36.97161239666664,0 127.9300428198222,36.97158019040541,0 127.9297965101854,36.97211429174179,0 127.9298981149176,36.97208874455205,0 127.9295278949947,36.97292765687011,0 127.9294576721452,36.97291888328957,0 127.9294207240807,36.97305209137348,0 127.9299634395797,36.97305304028791,0 127.9330232186038,36.97251475565275,0 127.9331002327048,36.97259926750567,0 127.9332010066318,36.97264109847742,0 127.9333368460617,36.97263646502434,0 127.9334608768134,36.97260447737479,0 127.933849044493,36.97281542879416,0 127.9338062088944,36.97314831613657,0 127.9334376653156,36.97320018217172,0 127.9335696696228,36.97339662292993,0 127.9336351889868,36.97360768673314,0 127.9337677721598,36.97380152470573,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

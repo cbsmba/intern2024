@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>옹달샘시장.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>옹달샘시장</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						127.9331430788601,36.96550535987686,0 127.9329381448395,36.96530068454729,0 127.9327916083,36.96503156116057,0 127.9321938788322,36.96504434699706,0 127.9322079956981,36.96470387732278,0 127.9320329499687,36.96468372072962,0 127.9320518906374,36.96464900292261,0 127.9320127326398,36.96457931286263,0 127.9315732358423,36.96441948110377,0 127.931514376001,36.96435430671523,0 127.9315231048358,36.96424600498791,0 127.9316524915401,36.96426114245167,0 127.9316706176825,36.96419903219513,0 127.9318369533106,36.96417776854218,0 127.9317954576908,36.96424299079351,0 127.9318110335689,36.96428609273853,0 127.9318576565449,36.96429324180173,0 127.9319950269383,36.9643514462308,0 127.9320865141827,36.96445690853128,0 127.9321605327744,36.96443055649031,0 127.9326469763308,36.96442820203089,0 127.9327985053062,36.96449416285039,0 127.9330471916706,36.96418129458468,0 127.9333852695929,36.96435436886802,0 127.9336478613476,36.96425447991305,0 127.9337040575162,36.96430450478981,0 127.9339131144371,36.96429962428847,0 127.9338919139765,36.96436205797274,0 127.9340116912188,36.96440655773857,0 127.9341075413707,36.96444774632234,0 127.9337280468655,36.96487905969328,0 127.9336347809875,36.96499544092469,0 127.933396067227,36.96515762400949,0 127.9331430788601,36.96550535987686,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
