@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>제천 고추 시장.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>제천 고추 시장</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						128.1761383528625,37.15646703144336,0 128.175943772092,37.15638603678833,0 128.1759394129959,37.1564680096781,0 128.1758277772362,37.15661214782543,0 128.175620843116,37.15664148768513,0 128.1758002606801,37.15677752593071,0 128.1757993071969,37.15675043668158,0 128.1757138458165,37.15680957521955,0 128.1755272100928,37.15681234475286,0 128.1752394989365,37.15681973387789,0 128.1751268835823,37.15698069658188,0 128.1745554080973,37.15661336869432,0 128.1740934384341,37.15636245368863,0 128.1738939050811,37.15605105898378,0 128.1739416765661,37.15585330229158,0 128.1739346773886,37.15571096836084,0 128.1741211886162,37.15553354819529,0 128.1743089101876,37.15547150826198,0 128.1748332591182,37.15561034780849,0 128.1754028447257,37.15589382467924,0 128.1756364514617,37.15593142409491,0 128.1762326271349,37.15631162632976,0 128.1761383528625,37.15646703144336,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

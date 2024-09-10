@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>제천 동문 시장.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>제천 동문 시장</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						128.212845331776,37.13910242755787,0 128.2128102322632,37.13900485029716,0 128.2127697551737,37.13899820631055,0 128.2127903657383,37.13891186699639,0 128.2127573994848,37.13879215729394,0 128.2124679881532,37.13886233132816,0 128.2124107651653,37.13871959597998,0 128.2126927833695,37.13861298643454,0 128.2125720175407,37.1384198947484,0 128.2127980218009,37.13832983197311,0 128.2129950878631,37.13827100038912,0 128.2130508370062,37.13827732239641,0 128.213113742736,37.13838483917177,0 128.2133316759681,37.13833585386975,0 128.2134331532818,37.13851520577919,0 128.2136161635559,37.13845590582705,0 128.2136733089655,37.13853859769516,0 128.2136618101657,37.13856916109538,0 128.2137838077937,37.13861329873961,0 128.2138242735145,37.1386737011616,0 128.2138665948549,37.13875224521237,0 128.2138188901767,37.13875066921074,0 128.2138084003915,37.13877130662454,0 128.2137461054177,37.13879383320325,0 128.2137654144938,37.13886138466849,0 128.2138167154144,37.13888027492723,0 128.2137806138922,37.13900166448285,0 128.2135993824748,37.13900385191319,0 128.2135392460619,37.1389633630822,0 128.2133910957016,37.13899628833867,0 128.2134063394874,37.13903112659928,0 128.212845331776,37.13910242755787,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
