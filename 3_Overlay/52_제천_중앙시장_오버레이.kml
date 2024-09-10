@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>제천 중앙시장</name>
+	<color>4fffffff</color>
+	<Icon>
+		<href>0_SRC/52_제천_중앙시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.1378060424335</north>
+		<south>37.13558427868909</south>
+		<east>128.2126826023284</east>
+		<west>128.2100070910063</west>
+		<rotation>1.034856081008911</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

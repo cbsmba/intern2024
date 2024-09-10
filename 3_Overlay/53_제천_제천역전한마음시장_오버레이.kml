@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>제천 제천역전한마음시장</name>
+	<color>80ffffff</color>
+	<Icon>
+		<href>0_SRC/53_제천_제천역전한마음시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.13017564462076</north>
+		<south>37.12799082921062</south>
+		<east>128.2077800551578</east>
+		<west>128.2054685078532</west>
+		<rotation>1.077810525894165</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

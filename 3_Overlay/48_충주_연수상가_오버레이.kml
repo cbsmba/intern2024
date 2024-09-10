@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>충주 연수상가</name>
+	<color>61ffffff</color>
+	<Icon>
+		<href>0_SRC/48_충주_연수상가.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.99049711611601</north>
+		<south>36.98701629617707</south>
+		<east>127.9348253555702</east>
+		<west>127.9276529867751</west>
+		<rotation>-0.1472190469503403</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

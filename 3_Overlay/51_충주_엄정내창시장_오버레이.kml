@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>충주 엄정내창시장</name>
+	<color>5cffffff</color>
+	<Icon>
+		<href>0_SRC/51_충주_엄정내창시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.0879723344867</north>
+		<south>37.08532845474376</south>
+		<east>127.9187436740324</east>
+		<west>127.9141410873766</west>
+		<rotation>-1.222557663917542</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

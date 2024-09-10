@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>충주 목행시장</name>
+	<color>75ffffff</color>
+	<Icon>
+		<href>0_SRC/50_충주_목행시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.01667228078144</north>
+		<south>37.01217054107011</south>
+		<east>127.9207991678688</east>
+		<west>127.9167132821544</west>
+		<rotation>-0.8958254456520081</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

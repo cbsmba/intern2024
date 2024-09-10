@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>충주 농산물종합시장</name>
+	<color>96ffffff</color>
+	<Icon>
+		<href>0_SRC/49_충주_농산물종합시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.00582562159748</north>
+		<south>37.00277194566358</south>
+		<east>127.9254574601639</east>
+		<west>127.9206970041382</west>
+		<rotation>-0.1968460530042648</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

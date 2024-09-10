@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>제천 내토전통시장</name>
+	<color>78ffffff</color>
+	<Icon>
+		<href>0_SRC/54_제천_내토전통시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>37.13849981232065</north>
+		<south>37.13691416342548</south>
+		<east>128.213439892527</east>
+		<west>128.2113106925494</west>
+		<rotation>1.360418796539307</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
