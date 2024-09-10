@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>무학시장</name>
+	<visibility>0</visibility>
+	<color>8affffff</color>
+	<Icon>
+		<href>시장/42_충주_무학시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.97590907947495</north>
+		<south>36.97284328309064</south>
+		<east>127.9300763607669</east>
+		<west>127.9250627605348</west>
+		<rotation>0.4540142029096331</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

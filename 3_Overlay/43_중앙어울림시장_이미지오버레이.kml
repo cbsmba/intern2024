@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>중앙어울림시장</name>
+	<visibility>0</visibility>
+	<color>3bffffff</color>
+	<Icon>
+		<href>시장/43_충주_중앙어울림시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.97272630989508</north>
+		<south>36.97115438389973</south>
+		<east>127.9349509016676</east>
+		<west>127.9323146323848</west>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

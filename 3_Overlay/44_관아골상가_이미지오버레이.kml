@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>관아골상가</name>
+	<color>4dffffff</color>
+	<Icon>
+		<href>시장/44_충주_관아골상가.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.97324826131182</north>
+		<south>36.96852678639358</south>
+		<east>127.9384937011101</east>
+		<west>127.9326317830936</west>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

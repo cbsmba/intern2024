@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>성서중심시장</name>
+	<visibility>0</visibility>
+	<color>42ffffff</color>
+	<Icon>
+		<href>시장/45_충주_성서중심시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.97353370391949</north>
+		<south>36.96885940665317</south>
+		<east>127.9341473224565</east>
+		<west>127.9284009433718</west>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
