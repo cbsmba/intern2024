@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>36_보은_보은전통시장</name>
+	<color>61ffffff</color>
+	<Icon>
+		<href>36_보은_보은전통시장.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.48455923315603</north>
+		<south>36.4827008133602</south>
+		<east>127.721311729982</east>
+		<west>127.7190482840283</west>
+		<rotation>0.9307655692100525</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

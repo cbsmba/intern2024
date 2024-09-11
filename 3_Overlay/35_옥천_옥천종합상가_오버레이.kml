@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>35_옥천_옥천종합상가</name>
+	<color>b8ffffff</color>
+	<Icon>
+		<href>35_옥천_옥천종합상가.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.30299783651879</north>
+		<south>36.3017695571264</south>
+		<east>127.5689290166646</east>
+		<west>127.5675375320243</west>
+		<rotation>-0.06894508749246597</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

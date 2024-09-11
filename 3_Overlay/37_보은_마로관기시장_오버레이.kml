@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>보은 마로관기시장</name>
+	<color>61ffffff</color>
+	<Icon>
+		<href>37_보은_마로관기시장-9개 구역.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.43616068681117</north>
+		<south>36.43450128477356</south>
+		<east>127.8194697865043</east>
+		<west>127.8170166428798</west>
+		<rotation>-0.4025714099407196</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
