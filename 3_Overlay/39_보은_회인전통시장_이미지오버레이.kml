@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>회인전통시장</name>
+	<color>57ffffff</color>
+	<Icon>
+		<href>시장_south/39_보은_회인전통시장-11개 구역.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.49316778485963</north>
+		<south>36.48986543009494</south>
+		<east>127.5997220563865</east>
+		<west>127.5954685556931</west>
+		<rotation>-0.5653607845306396</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

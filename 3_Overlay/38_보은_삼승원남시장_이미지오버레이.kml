@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>삼승원남시장</name>
+	<color>42ffffff</color>
+	<Icon>
+		<href>시장_south/38_보은_삼승원남시장_6개 구역.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.3969115126576</north>
+		<south>36.39488242128124</south>
+		<east>127.7340364649395</east>
+		<west>127.7318431708532</west>
+		<rotation>1.055069208145142</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>

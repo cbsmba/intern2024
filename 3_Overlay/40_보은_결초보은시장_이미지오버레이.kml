@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>결초보은시장</name>
+	<color>4dffffff</color>
+	<Icon>
+		<href>시장_south/40_보은_결초보은시장-7개 구역.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>36.4841857917854</north>
+		<south>36.48247160408661</south>
+		<east>127.7203067114827</east>
+		<west>127.7179067347029</west>
+		<rotation>0.04214091221848768</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
