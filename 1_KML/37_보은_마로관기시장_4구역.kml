@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>마로관기시장 4구역(1).kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>마로관기시장 4구역</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						127.8174127857178,36.43566993831522,0 127.8170993667999,36.43576315787384,0 127.8171064182149,36.43552674833175,0 127.81709007199,36.43544502317411,0 127.8171148713751,36.43542377712899,0 127.8170816852161,36.4352928399498,0 127.8171158269917,36.43517772084979,0 127.8171797734968,36.43514806059504,0 127.8171919744692,36.43510515411707,0 127.8171874103974,36.43507478005605,0 127.8171553815036,36.43499140681182,0 127.817202258235,36.43497317400511,0 127.8172241031568,36.43494356930887,0 127.8172626339284,36.43494161352162,0 127.8173535936284,36.4351259122276,0 127.8172510365104,36.43515954942512,0 127.8174062982233,36.4353736744582,0 127.8174913307419,36.43531700554909,0 127.8176053351494,36.43547666562041,0 127.8173774714607,36.43557445061121,0 127.817421049364,36.43566807557815,0 127.8174127857178,36.43566993831522,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

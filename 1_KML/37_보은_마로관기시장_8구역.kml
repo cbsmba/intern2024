@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>마로관기시장 8구역.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>마로관기시장 8구역</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						127.8182341210843,36.43476301660989,0 127.8177536504143,36.43490570015183,0 127.8176671319621,36.43473316715787,0 127.8177131912026,36.4347103863204,0 127.8177151858206,36.4347614891219,0 127.8177367391359,36.43477950220242,0 127.8177396354575,36.43480305288617,0 127.8177689238523,36.43480851870541,0 127.8177818923241,36.43470489884117,0 127.8178295359073,36.43471325573056,0 127.8178194803216,36.4346790065584,0 127.8179139734127,36.43463795088074,0 127.8179676926417,36.43475633422677,0 127.8180027965869,36.43473290371831,0 127.8180151905739,36.43471072878,0 127.8181561299612,36.43469010424654,0 127.8181644946584,36.43466919005061,0 127.8182029509724,36.4346681609227,0 127.8182353044327,36.43476030006717,0 127.8182341210843,36.43476301660989,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
