@@ -1,7 +1,7 @@
 // 청주
 
 var polygonPath_Main = {
-    "두꺼비시장" : [ 
+    "두꺼비시장(청주)" : [ 
         new kakao.maps.LatLng(36.61779082246839, 127.47222312808394), 
         new kakao.maps.LatLng(36.61666359327797, 127.47275630181396), 
         new kakao.maps.LatLng(36.61753834709897, 127.4742223127537), 
@@ -11,7 +11,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.617816410185405, 127.47306293957034), 
         new kakao.maps.LatLng(36.61801126158208, 127.47297000577288) 
    ], 
-    "가경터미널시장" : [ 
+    "가경터미널시장(청주)" : [ 
         new kakao.maps.LatLng(36.62799151195114, 127.43713454567325), 
         new kakao.maps.LatLng(36.6274705948595, 127.43573443262054), 
         new kakao.maps.LatLng(36.62726825421333, 127.4358309921414), 
@@ -26,7 +26,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.62830147747534, 127.43691460454237) 
    ], 
    
-    "내덕자연시장" : [ 
+    "내덕자연시장(청주)" : [ 
         new kakao.maps.LatLng(36.66311245862018, 127.48961527571436), 
         new kakao.maps.LatLng(36.66304732594387, 127.48961978663408), 
         new kakao.maps.LatLng(36.6629966671575, 127.48948445904246), 
@@ -48,7 +48,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.66300584133374, 127.488579359779) 
    ],
 
-   "복대시장" : [ 
+   "복대시장(청주)" : [ 
     new kakao.maps.LatLng(36.63550203296519, 127.4480605527404), 
     new kakao.maps.LatLng(36.634857018724695, 127.4480158969165), 
     new kakao.maps.LatLng(36.63466760875544, 127.4474353712056), 
@@ -57,7 +57,7 @@ var polygonPath_Main = {
     new kakao.maps.LatLng(36.635599296548826, 127.44957247135017), 
     ], 
 
-    "북부시장" : [ 
+    "북부시장(청주)" : [ 
         new kakao.maps.LatLng(36.64970965044552, 127.4859926572296), 
         new kakao.maps.LatLng(36.64976560076006, 127.48580222040962), 
         new kakao.maps.LatLng(36.6497419294781, 127.48555545720626), 
@@ -80,7 +80,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.64837543857943, 127.48642717509055), 
         new kakao.maps.LatLng(36.64865734655771, 127.4869046082449), 
     ], 
-    "사직시장" : [ 
+    "사직시장(청주)" : [ 
         new kakao.maps.LatLng(36.63674500701429, 127.4782926675343), 
         new kakao.maps.LatLng(36.63628441382622, 127.47835704054825), 
         new kakao.maps.LatLng(36.63617895051257, 127.4772761103562), 
@@ -94,7 +94,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.63672348402944, 127.47682818146768), 
         new kakao.maps.LatLng(36.636639544331096, 127.47686305018354), 
     ], 
-    "원마루시장" : [ 
+    "원마루시장(청주)" : [ 
         new kakao.maps.LatLng(36.61015019224855, 127.49522578691676), 
         new kakao.maps.LatLng(36.60837589716086, 127.49516263404072), 
         new kakao.maps.LatLng(36.60832158136121, 127.49606030706418), 
@@ -104,7 +104,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.60895526331044, 127.49662417202866), 
         new kakao.maps.LatLng(36.61010311964068, 127.49639411512317), 
     ], 
-    "직지시장" : [ 
+    "직지시장(청주)" : [ 
         new kakao.maps.LatLng(36.6473587335559, 127.46624559206585), 
         new kakao.maps.LatLng(36.646336147755136, 127.46553246741676), 
         new kakao.maps.LatLng(36.64626614882584, 127.46572592144392), 
@@ -117,7 +117,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.6469449135056, 127.46693366534704), 
         new kakao.maps.LatLng(36.6470037748398, 127.46697832117393), 
     ], 
-    "사창시장" : [ 
+    "사창시장(청주)" : [ 
         new kakao.maps.LatLng(36.63388292191097, 127.46644417690224), 
         new kakao.maps.LatLng(36.63387861715458, 127.46593455720924), 
         new kakao.maps.LatLng(36.63380974101966, 127.46581117559931), 
@@ -162,7 +162,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.63320747517135, 127.46628319069325), 
         new kakao.maps.LatLng(36.63358630182282, 127.46630232890476), 
     ], 
-    "복대가경시장" : [ 
+    "복대가경시장(청주)" : [ 
         new kakao.maps.LatLng(36.62973389385336, 127.44101321378814), 
         new kakao.maps.LatLng(36.62972846990818, 127.44116866487346), 
         new kakao.maps.LatLng(36.62966338253623, 127.44123625230188), 
@@ -178,7 +178,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.629424728368726, 127.44187157412888), 
         new kakao.maps.LatLng(36.62939218456136, 127.4410740424737), 
     ], 
-    "육거리종합시장" : [ 
+    "육거리종합시장(청주)" : [ 
         new kakao.maps.LatLng(36.62803756905361, 127.4910103001088), 
         new kakao.maps.LatLng(36.62828386677979, 127.49086253164052), 
         new kakao.maps.LatLng(36.62863050669062, 127.4911012345508), 
@@ -199,20 +199,20 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.62606311388869, 127.48959994366736), 
         new kakao.maps.LatLng(36.628028963060885, 127.49102079432392), 
     ], 
-    "성안길상점가" : [ 
+    "성안길상점가(청주)" : [ 
         new kakao.maps.LatLng(36.63695975605166, 127.49020109548714), 
         new kakao.maps.LatLng(36.6367498750334, 127.48765571340716), 
         new kakao.maps.LatLng(36.63137616570904, 127.4875408756822), 
         new kakao.maps.LatLng(36.631796239504894, 127.49046923854245), 
         new kakao.maps.LatLng(36.63260594050547, 127.4907651094014), 
     ], 
-    "대현프리몰청주점" : [ 
+    "대현프리몰청주점(청주)" : [ 
         new kakao.maps.LatLng(36.63672386144482, 127.486362220272), 
         new kakao.maps.LatLng(36.63661428420496, 127.48637739313656), 
         new kakao.maps.LatLng(36.63691257743707, 127.48916161378348), 
         new kakao.maps.LatLng(36.63703432944482, 127.48916161378348), 
     ], 
-    "중앙시장" : [ 
+    "중앙시장(청주)" : [ 
         new kakao.maps.LatLng(36.63952510224851, 127.4888091962984), 
         new kakao.maps.LatLng(36.63857850592486, 127.4889040267019), 
         new kakao.maps.LatLng(36.63863938063644, 127.48967404957835), 
@@ -220,7 +220,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.63908680829058, 127.48946162947452), 
         new kakao.maps.LatLng(36.639546408141264, 127.48941990409698), 
     ], 
-    "서문시장" : [ 
+    "서문시장(청주)" : [ 
         new kakao.maps.LatLng(36.6341680049947, 127.48465941770743), 
         new kakao.maps.LatLng(36.63405233628895, 127.48464803805902), 
         new kakao.maps.LatLng(36.63402494104373, 127.4846935566527), 
@@ -268,7 +268,7 @@ var polygonPath_Main = {
         new kakao.maps.LatLng(36.634152785450944, 127.48488321745988), 
         new kakao.maps.LatLng(36.63416800500757, 127.48464803805918), 
     ], 
-    "오창전통시장" : [ 
+    "오창전통시장(청주)" : [ 
         new kakao.maps.LatLng(36.74023243514984, 127.45699140346402), 
         new kakao.maps.LatLng(36.74044714608928, 127.4569850240602), 
         new kakao.maps.LatLng(36.74067208071496, 127.45685105657954), 
