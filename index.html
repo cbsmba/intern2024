@@ -156,17 +156,23 @@
 
                 // 지도에 다각형을 표시합니다
                 polygon.setMap(map);
-                make_marker(i);
+
+		if (market[i].includes("구역")) {
+                	console.log("여러 구역으로 나뉘어진 전통시장");
+		}
+		else {
+			make_marker(i);
+		}
             }
 
-
             function make_marker(i) {
-                var marker = new kakao.maps.Marker({
-                            position: polygonPath[market[i]][0],
-                            clickable: true
-                });    
-                marker.setMap(map);
-                               
+	        var marker = new kakao.maps.Marker({
+	                        position: polygonPath[market[i]][0],
+	                        clickable: true
+		});    
+	        marker.setMap(map);
+		
+		    
                 //var content = '<div class="click_text"> <address> <a href = "https://map.kakao.com/link/to/'+ market[i] + ',' + loc_Parking_lot[market[i]][0] + ',' + loc_Parking_lot[market[i]][1] + '">' + market[i] + " 카카오 내비" + '</a> </address> </div>';
                 var content = market[i];
                 kakao.maps.event.addListener(marker, 'click', function() {
@@ -390,7 +396,7 @@
 
                 var similar_market_found = false;
                 for (var i = 0 ; i < market.length; i++) {
-                    if (market[i].includes(address)) {
+                    if ( (market[i].includes(address)) && !(market[i].includes("구역")) ) {   // 시장 이름에 구역이 없어야 함
                         var newItem = document.createElement("div");
                         newItem.innerHTML = market[i];
                         newItem.onclick = goto_address;
