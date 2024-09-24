@@ -1,7 +1,7 @@
 // 진천(2), 음성, 증평, 괴산
 
 var polygonPath_Middle = {
-    "진천전통시장" : [
+    "운수대통 생거진천전통시장" : [
             new kakao.maps.LatLng(36.8607855022081, 127.450332462974),
             new kakao.maps.LatLng(36.85926874909513, 127.45007643500304),
             new kakao.maps.LatLng(36.85916850285759, 127.45106786246506),
@@ -171,7 +171,7 @@ var polygonPath_Middle = {
         new kakao.maps.LatLng(36.78421709497648, 127.58384659992171), 
         ], 
 
-        "감곡시장" : [ 
+        "감곡시장(음성)" : [ 
                 new kakao.maps.LatLng(37.11876725342468, 127.6375903305667), 
                 new kakao.maps.LatLng(37.11885547098283, 127.63764841313498), 
                 new kakao.maps.LatLng(37.118802540460266, 127.63782542667644), 
@@ -221,7 +221,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(37.11851252464855, 127.63755437469108), 
                 new kakao.maps.LatLng(37.11866690582729, 127.6376083085045), 
        ], 
-        "삼성시장" : [ 
+        "음성삼성시장" : [ 
                 new kakao.maps.LatLng(37.019679885653, 127.4983338454476), 
                 new kakao.maps.LatLng(37.01936439328217, 127.49848680314582), 
                 new kakao.maps.LatLng(37.019346074330095, 127.49851994398044), 
@@ -259,7 +259,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(37.01922759278884, 127.49800650746388), 
                 new kakao.maps.LatLng(37.01942675811964, 127.49789921910651), 
        ], 
-        "대소시장" : [ 
+        "대소시장(음성)" : [ 
                 new kakao.maps.LatLng(36.96885918863555, 127.48306863409707), 
                 new kakao.maps.LatLng(36.96896146693983, 127.48319664808254), 
                 new kakao.maps.LatLng(36.96895711467435, 127.48328108283891), 
@@ -368,7 +368,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(36.93700112540733, 127.69056909465804), 
                 new kakao.maps.LatLng(36.93707830508045, 127.690612009999), 
        ], 
-        "무극시장" : [ 
+        "무극시장(음성)" : [ 
                 new kakao.maps.LatLng(36.99355383665824, 127.59564157214758), 
                 new kakao.maps.LatLng(36.99370314107541, 127.59617628950602), 
                 new kakao.maps.LatLng(36.99371355765173, 127.5963675705123), 
@@ -430,7 +430,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(36.99340602126297, 127.5956664628246), 
                 new kakao.maps.LatLng(36.99340333615197, 127.59574042311662), 
        ], 
-        "괴산시장" : [ 
+        "괴산전통시장" : [ 
                 new kakao.maps.LatLng(36.80964977083553, 127.79780209064484), 
                 new kakao.maps.LatLng(36.809593936900185, 127.79692769050598), 
                 new kakao.maps.LatLng(36.81010073574394, 127.79630005359648), 
@@ -477,7 +477,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(36.809778618223255, 127.79785573482512), 
                 new kakao.maps.LatLng(36.80964708651264, 127.79780209064484), 
        ], 
-        "청천시장" : [ 
+        "청천푸른내시장(괴산)" : [ 
                 new kakao.maps.LatLng(36.66005377033749, 127.7389007806778), 
                 new kakao.maps.LatLng(36.66018286904371, 127.73805856704712), 
                 new kakao.maps.LatLng(36.66022159861336, 127.73808002471922), 
@@ -515,7 +515,7 @@ var polygonPath_Middle = {
                 new kakao.maps.LatLng(36.6600580736312, 127.7389021217823), 
        ], 
 
-       "목도시장" : [ 
+       "목도시장(괴산)" : [ 
         new kakao.maps.LatLng(36.87297357511222, 127.85363495349884), 
         new kakao.maps.LatLng(36.872849125523736, 127.8535196185112), 
         new kakao.maps.LatLng(36.87279548339722, 127.85344451665878), 
@@ -556,7 +556,7 @@ var polygonPath_Middle = {
         new kakao.maps.LatLng(36.87277831790877, 127.85395681858064), 
         new kakao.maps.LatLng(36.87297116122127, 127.8536332771182), 
    ], 
-    "연풍시장" : [ 
+    "연풍시장(괴산)" : [ 
         new kakao.maps.LatLng(36.76423045107956, 127.99633383750916), 
         new kakao.maps.LatLng(36.76425193839199, 127.99649477005003), 
         new kakao.maps.LatLng(36.76435937486383, 127.9964357614517), 
