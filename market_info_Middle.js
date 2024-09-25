@@ -84,7 +84,7 @@ var polygonPath_Middle = {
             new kakao.maps.LatLng(36.85683740118752, 127.44219276848774)
             ],
 
-        "내수전통시장" : [ 
+        "내수전통시장(청주)" : [ 
                 new kakao.maps.LatLng(36.72561931136957, 127.53471258107643), 
                 new kakao.maps.LatLng(36.72409722878396, 127.5357425492296), 
                 new kakao.maps.LatLng(36.72342647093188, 127.5361395161288), 
