@@ -53,6 +53,13 @@
                text-align: center;
                padding: 2px;
            }
+
+	.desc_text {
+               font-size: 11px;
+               text-align: left;
+               padding: 2px;
+           }
+	    
        </style>
 
 </head>
@@ -81,6 +88,8 @@
         <script type="text/javascript" src="market_info_South.js"></script>
         <script type="text/javascript" src="market_parking_lot.js"></script>
         <script type="text/javascript" src="market_onnuri.js"></script>
+	<script type="text/javascript" src="market_info_desc.js"></script>	    
+	    
 	    
         <script>
             //var base_center = new kakao.maps.LatLng(36.858351739006984, 127.44549719302887)
@@ -179,14 +188,30 @@
                     
                     console.log("mark event listener!!!");
 
+		    var content = '<div class = "desc_text">';
                     if(Object.keys(loc_Parking_lot).includes(market[i])){
-                        content = '<div class="click_text"> 카카오내비 :' + '<address> <a href = https://map.kakao.com/link/to/' 
+                        content = content +'<div class="click_text"> 카카오내비 :' + '<address> <a href = https://map.kakao.com/link/to/' 
                             + market[i] + ',' + loc_Parking_lot[market[i]][0] + ',' + loc_Parking_lot[market[i]][1] + ">" + 
                             market[i] + " 주차장" + '</a>' + '</address> </div>';
 
 
                     }
+			
+		    if(Object.keys(market_info_desc).includes(market[i])){
+			    desc_contents = market_info_desc[market[i]] 
 
+			    for  (var j = 0; j < desc_contents.length; j++) {
+				content = content + "ㅇ " + desc_contents[j] + "<br>";
+			    }
+			    console.log(content);
+		    }
+		    else {
+			content = content + market[i];
+		    }
+			
+		    content = content + '</div>';
+			
+		   
                     infowindow.setContent(content);
                     infowindow.open(map, marker);
                     } 
